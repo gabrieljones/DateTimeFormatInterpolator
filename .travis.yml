@@ -21,4 +21,4 @@ matrix:
     env: SBT_PROJECT_DIR=java7
   - jdk: openjdk8
     env: SBT_PROJECT_DIR=java7
-script: cd $SBT_PROJECT_DIR &&& sbt +package
+script: cd $SBT_PROJECT_DIR && sbt +package
