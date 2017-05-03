@@ -4,7 +4,7 @@ version := "0.1.0"
 
 scalacOptions += "-target:jvm-1.7"
 
-crossScalaVersions := Seq("2.10.6", "2.11.8", "2.12.2")
+crossScalaVersions := Seq("2.10.6", "2.11.8")
 
 libraryDependencies += "com.propensive" %% "contextual" % "1.0.0"
 
