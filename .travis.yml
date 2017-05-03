@@ -1,15 +1,7 @@
-dist: trusty
-sudo: false
 language: scala
-scala:
-- 2.10.6
-- 2.11.8
-- 2.12.2
 jdk:
 - oraclejdk7
 - oraclejdk8
-- openjdk7
-- openjdk8
 env:
 - SBT_PROJECT_DIR=java7
 - SBT_PROJECT_DIR=java8
@@ -17,12 +9,6 @@ matrix:
   exclude:
   - jdk: oraclejdk7
     env: SBT_PROJECT_DIR=java8
-  - jdk: openjdk7
-    env: SBT_PROJECT_DIR=java8
   - jdk: oraclejdk8
-    env: SBT_PROJECT_DIR=java7
-  - jdk: openjdk8
-    env: SBT_PROJECT_DIR=java7
-  - scala: 2.12.2
     env: SBT_PROJECT_DIR=java7
 script: cd $SBT_PROJECT_DIR && sbt +package
